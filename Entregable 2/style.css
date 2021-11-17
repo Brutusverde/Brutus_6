@@ -1,0 +1,705 @@
+/*/////////////////////////////////////////////////
+////////////////Diego López Navas//////////////////
+/////////////////////////////////////////////////*/
+
+/*General////////////////////////////////////////*/
+
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*General////////////////////////////////////////*/
+
+/*Custom scrollbar///////////////////////////////*/
+
+::-webkit-scrollbar{
+    background-color: #1b1b1b;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    margin: 1vh;
+    border-radius: 100vw; 
+}
+
+::-webkit-scrollbar-thumb{
+    margin: 1vh;
+    background-color: #313131;
+    border-radius: 100vw; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #915200;
+}
+
+/*Custom scrollbar///////////////////////////////*/
+
+/*Img con título/////////////////////////////////*/
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-block: 5vh;
+}
+
+.imgTit img{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 550px;
+}
+
+.titulo2{
+    position: absolute;
+    font-size: 120px;
+    color: #915200;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+#circle{
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+    background: #161616;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+/*Img con título/////////////////////////////////*/
+
+/*Div información oscuro/////////////////////////*/
+
+/*Fondo*/
+.contenedor{
+    background-color: #161616;
+    width: 100vw;
+    height: fit-content;
+}
+
+/*Tabla*/
+.contTable{
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contTable td{
+    padding: 5vh;
+}
+
+/*Título*/
+.contTit{
+    text-align: left;
+    color: #a8a8a8;
+    font-size: 60px;
+}
+
+/*Párrafo*/
+.contIntro{
+    color: #a8a8a8;
+    text-align: justify;
+    align-items: right ;
+    letter-spacing: 2px;
+}
+
+/*Imagen*/
+.contImg{
+    width: 200px;
+}
+
+/*Div información oscuro/////////////////////////*/
+
+/*Div información claro/////////////////////////*/
+
+/*Fondo*/
+.contenedor2{
+    background-color: #a8a8a8;
+    width: 100vw;
+    height: fit-content;
+}
+
+
+/*Título*/
+.contTit2{
+    text-align: right;
+    color: #0e0e0e;
+    font-size: 60px;
+}
+
+/*Párrafo*/
+.contIntro2{
+    color: #0e0e0e;
+    text-align: justify;
+    align-items: right ;
+    letter-spacing: 2px;
+}
+
+/*Div información claro/////////////////////////*/
+
+/*Botones comprar///////////////////////////////*/
+
+.comprar{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comprar td{
+    
+    color: #0e0e0e;
+    text-align: center;
+    padding: 1vw;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: #915200;
+    transition: 0.3s;
+}
+
+.comprar a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+/*Botones comprar///////////////////////////////*/
+
+/*Boton home////////////////////////////////////*/
+
+#home{
+    top: 2vh;
+    left: 2vw;
+    position: absolute;
+    font-size: 50px;
+}
+
+#home a{
+    color: #915200;
+    transition: 0.2s;
+}
+
+#home a:hover{
+    transition: 0.2s;
+    color: #ffffff;
+}
+
+/*Boton home////////////////////////////////////*/
+
+/*Fondo gris////////////////////////////////////*/
+
+#back3{
+    background: linear-gradient(rgb(22, 22, 22), #1b1b1b);
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Fondo gris////////////////////////////////////*/
+
+/*Fondo lineas////////////////////////////////////*/
+
+#back2{
+    z-index: -2;
+    opacity: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#back2 img{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    animation: up-down 0.5s infinite linear;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(-0.5vh);
+    }
+
+    100%{
+        transform: translateY(0.5vh);
+    }
+}
+
+/*Fondo lineas////////////////////////////////////*/
+
+/*Título//////////////////////////////////////////*/
+
+.titulo{
+    opacity: 50%;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 80px;
+    color: #ff9100;
+    letter-spacing: 5px;
+}
+
+/*Título//////////////////////////////////////////*/
+
+/*Selector juegos/////////////////////////////////*/
+
+#select{
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#select img{
+    border: 4px solid rgba(0, 0, 0, 0);
+    transition: 0.1s;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4))
+            drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.4));
+    
+}
+
+#select img:hover{
+    
+    border: 4px solid #915200;
+    transition: 0.1s;
+}
+
+#select td{
+    padding: 10px;
+}
+
+/*Selector juegos/////////////////////////////////*/
+
+/*Selector juegos audio///////////////////////////*/
+
+#audioCont{
+    width: 515px;
+    height: 155px;
+}
+
+#audioImg{
+    width: 515px;
+    height: 155px;
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+#audioCont p:hover{
+    border-radius: 15px;
+    color: #313131;
+    background: #915200;
+    transition: 0.2s;
+}
+
+#audioCont p{
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 515px;
+    height: 155px;
+    font-size: 30px;
+    color: #915200;
+    background: #313131;
+    opacity: 80%;
+}
+
+/*Selector juegos audio///////////////////////////*/
+
+/*Banner//////////////////////////////////////////*/
+
+#bannerPrincipal{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 5vh;
+    overflow: hidden;
+}
+
+#bannerCircle{
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+    background: #161616;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/*Contenedor*/
+.banner{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Contenido*/
+.bannerCont{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*Imagen de fondo*/
+.bannerCont img{ 
+    width: 100vw;
+    height: 100%;
+}
+
+/*Capa oscura con contenido*/
+.bannerCont2{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: left .5s;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/*P de la capa oscura*/
+.bannerCont2 p{
+    color: #ffffff;
+}
+
+/*Animación de la capa oscura*/
+.banner:hover .bannerCont2{
+    left: 0;
+}
+
+/*Difumina el fondo para que se vea la capa oscura*/
+.banner:hover .bannerImg img{
+    filter: blur(10px);
+    transition: 1s;
+}
+
+.separador{
+    padding: 10px;
+    background: #1b1b1b;
+}
+
+/*Contenido banner//////////*/
+
+.bannerCont2 table td{
+    padding-inline: 2vw;
+}
+
+.bannerCont2 table h1{
+    color: #d37800;
+    letter-spacing: 2px;
+}
+
+.bannerCont2 table p{
+    color: #a8a8a8;
+    letter-spacing: 2px;
+}
+
+.bannerCont2 table a{
+    color: #d37800;
+    letter-spacing: 2px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.bannerCont2 table a:hover{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+/*Contenido banner//////////*/
+
+/*Banner//////////////////////////////////////////*/
+
+/*Address/////////////////////////////////////////*/
+
+address{
+    background-color: #0a0a0a;
+    letter-spacing: 2px;
+    color: #a8a8a8;
+    padding: 1vh;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#address2{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    letter-spacing: 2px;
+    color: #a8a8a8;
+    padding: 1vh;
+    font-size: 20px;
+    text-align: center;
+}
+
+#address2 i{
+    color: #915200;
+    padding-inline: 2vw;
+    font-size: 30px;
+    animation: shake 0.5s infinite ease-in-out alternate;
+}
+
+#address2 i:hover{
+    color: #ffffff;
+    transition: 0.2s;
+    padding-inline: 2vw;
+    font-size: 30px;
+    animation: shake 0.5s infinite ease-in-out alternate;
+}
+
+address i{
+    color: #915200;
+    padding-inline: 2vw;
+    font-size: 30px;
+    animation: shake 0.5s infinite ease-in-out alternate;
+}
+
+address i:hover{
+    color: #ffffff;
+    transition: 0.2s;
+    padding-inline: 2vw;
+    font-size: 30px;
+    animation: shake 0.5s infinite ease-in-out alternate;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotateZ(10deg);
+    }
+
+    20%{
+        transform: rotateZ(-10deg);
+    }
+
+    40%{
+        transform: rotateZ(10deg);
+    }
+
+    60%{
+        transform: rotateZ(-10deg);
+    }
+
+    80%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+/*Address/////////////////////////////////////////*/
+
+/*form derecho////////////////////////////////////*/
+
+#formCont1{
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+}
+
+#formSide1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #313131;
+    margin-left: 0;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    opacity: 70%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4))
+            drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.4));
+}
+
+#formSide2{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1b1b1b;
+    margin-left: auto;
+    margin-right: 0;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    float: right;
+    opacity: 60%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4))
+            drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.4));
+}
+
+#contact{
+    padding-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+#contact td{
+    padding: 5px;
+}
+
+#contact label{
+    color: #d37800;
+}
+
+#contact textarea{
+    letter-spacing: 2px;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    color: #ffffff;
+}
+
+#contact input{
+    letter-spacing: 2px;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    color: #ffffff;
+}
+
+#contact button{
+    border-radius: 5px;
+    padding-block: 8px;
+    width: 172px;
+    text-decoration: none;
+    color: #a8a8a8;
+    background-color: #000000;
+    border: none;
+    transition: 0.3s;
+}
+
+#contact button:hover{
+    background-color: #a8a8a8;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*form derecho////////////////////////////////////*/
+
+/*form izquierdo//////////////////////////////////*/
+
+#contact2{
+    padding-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    color: #a8a8a8;
+}
+
+#contact2 td{
+    letter-spacing: 2px;
+    padding-block: 10px;
+    padding-inline: 40px;
+}
+
+#formTit{
+    text-align: center;
+    color: #d37800;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+#formSide{
+    text-align: center;
+    color: #d37800;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+#contact2Net{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+#contact2Net td{
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #d37800;
+}
+
+#contact2Net td a{
+    text-decoration: none;
+    color: #d37800;
+    transition: 0.2s;
+}
+
+#contact2Net td a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+    
+}
+
+/*form izquierdo//////////////////////////////////*/
+
+/*Work in progress////////////////////////////////*/
+
+.NoImage{
+    width: 200px;
+    height: 275px;
+    background: #313131;
+}
+
+/*Work in progress////////////////////////////////*/
+
+/*
+              _
+  __   ___.--'_`.
+ ( _`.'. -   'o` )
+ _\.'_'      _.-'
+( \`. )    //\`
+ \_`-'`---'\\__,
+  \`        `-\
+   `
+*/
